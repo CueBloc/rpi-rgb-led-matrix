@@ -66,7 +66,7 @@ HARDWARE_DESC?=regular
 # typically should double check cables and add TTL level converter if you
 # haven't.
 # Flag: --led-slowdown-gpio
-#DEFINES+=-DRGB_SLOWDOWN_GPIO=1
+DEFINES+=-DRGB_SLOWDOWN_GPIO=0
 
 # This allows to change the base time-unit for the on-time in the lowest
 # significant bit in nanoseconds.
@@ -148,7 +148,7 @@ HARDWARE_DESC?=regular
 # close together.
 # Then you can set the flag --led-gpio-mapping=adafruit-hat-pwm
 # .. or uncomment the following line.
-#HARDWARE_DESC=adafruit-hat-pwm
+HARDWARE_DESC=adafruit-hat-pwm
 
 # Typically, a Hub75 panel is split in two half displays, so that a 1:16
 # multiplexing actually multiplexes over two half displays and gives 32 lines.
